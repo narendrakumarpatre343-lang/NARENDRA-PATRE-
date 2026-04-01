@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narendra Patre | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1f1c2c,#928dab);
+    color:#fff;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    padding:40px 0;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    opacity:0.8;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff7e5f;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+h2{
+    margin-bottom:10px;
+    border-left:5px solid #ff7e5f;
+    padding-left:10px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Narendra Patre</h1>
+    <p>Java Full Stack Developer</p>
+    <button class="btn" onclick="toggleResume()">View Resume</button>
+</header>
+
+<div id="resume" class="hidden">
+
+<div class="card">
+<h2>Career Objective</h2>
+<p>Java Developer fresher pursuing MCA with strong fundamentals in Core Java, Advanced Java, Spring Boot, JSP, SQL, and full-stack development.Completed hands-on Java Full Stack training and built real-world projects like Spendo (Spring Boot budgeting app), PlogPatrol (event &amp; donation platform), and SkillSwap (JSP-based skill exchange system). Comfortable with backend logic, REST APIs, and database-driven applications.Detail-oriented, quick learner, and focused on writing clean, maintainable code. Open to entry-level Java / Full Stack opportunities..</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h2>Technical Skills</h2>
+<ul>
+<li>HTML5, CSS, React.js</li>
+<li>Java, J2EE, Spring Boot</li>
+<li>JavaScript</li>
+<li>MySQL, SQL</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Tools</h2>
+<ul>
+<li>Eclipse IDE</li>
+<li>Spring Tool Suite</li>
+<li>Apache Tomcat</li>
+</ul>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Education</h2>
+<ul>
+<li>BCA - Completed (2025)</li>
+<li>MCA - Appearing</li>
+<li>DCA - 2021</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Experience</h2>
+<p>01 Month learning experience in software development with hands-on practice in frontend and backend technologies.</p>
+</div>
+
+<div class="card">
+<h2>Hobbies</h2>
+<ul>
+<li>Learning new technologies</li>
+<li>Building projects</li>
+<li>Watching coding tutorials</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Contact</h2>
+<p>📞 +91-9171804584</p>
+<p>📧 narendrakumarpatre3@gmail.com</p>
+<p>📍 Pune, India</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Narendra Patre | Portfolio</p>
+</footer>
+
+</div>
+
+<script>
+function toggleResume(){
+    document.getElementById('resume').classList.toggle('hidden');
+}
+</script>
+
+</body>
+</html>
